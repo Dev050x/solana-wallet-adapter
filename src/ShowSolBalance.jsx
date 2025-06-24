@@ -14,7 +14,6 @@ const ShowSolBalance = () => {
         }
     },[publicKey,connection]);
     if(!publicKey || !connection){
-        console.log("connect wallet first");
         return (<div></div>)
     }
     async function walletBalance() {

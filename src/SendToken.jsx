@@ -6,7 +6,6 @@ const SendToken = () => {
     const wallet = useWallet();
     const {connection} = useConnection();
     if(!wallet.publicKey || !connection){
-        console.log("connect wallet first");
         return (<div></div>)
     }
     async function sendToken(){

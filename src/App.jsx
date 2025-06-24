@@ -16,6 +16,7 @@ import { ConnectWallet } from "./ConnectWallet";
 import RequestAirdrop from "./RequestAirdrop";
 import ShowSolBalance from "./ShowSolBalance";
 import SendToken from "./SendToken";
+import SignMessage from "./SignMessage";
 
 function App() {
   const endpoint = clusterApiUrl("devnet");
@@ -36,6 +37,9 @@ function App() {
           </div>
           <div>
             <SendToken />
+          </div>
+          <div>
+            <SignMessage />
           </div>
         </WalletModalProvider>
       </WalletProvider>

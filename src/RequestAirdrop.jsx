@@ -6,7 +6,6 @@ const RequestAirdrop = () => {
     const {publicKey} = useWallet();
     const {connection} = useConnection();
     if(!publicKey || !connection){
-        console.log("connect wallet first");
         return (<div></div>)
     }
     async function sendAirdrop(){
